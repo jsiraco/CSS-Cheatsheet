@@ -1,0 +1,119 @@
+main {
+  --teal: #1EEBA0;
+  --background: #33393f;
+  --glow: #e0eae4;
+  --heliotrope: #e866ec;
+}
+
+::selection {
+    background-color: var(--heliotrope);
+    color: var(--background);
+}
+
+html {
+    font-size: 62.5%;
+}
+
+body {
+    font-family: Arial, Helvetica, sans-serif;
+    font-size: 1.75rem;
+    line-height: 1.5;
+    color: var(--glow);
+    background-color: #33393f;
+}
+
+h1, h2, h3, h4, h5, h6 {
+    margin-bottom: 0.625rem;
+    color: var(--teal);
+    font-weight: 700;
+    font-size: 3rem;
+    line-height: 1.1;
+}
+
+p{
+    margin-bottom: 1rem;
+}
+
+code {
+    font-family: Consolas, Monaco, monospace;
+}
+
+header {
+    width: 95%;
+    margin: 0 auto;
+    padding: 2.5rem;
+    text-align: center;
+}
+
+header h1.page-title {
+    padding: 1rem;
+    font-size: 5rem;
+    color: #1EEBA0;
+}
+
+header p {
+    color: #e0eae4;
+}
+
+main {
+      width: 95%;
+      margin: 2rem;
+}
+
+ footer h3{
+     margin: 1.5rem;
+     text-align: center;
+     background-color: var(--glow);
+     font-size: 2rem;
+     padding-bottom: 2rem;
+}
+
+.row {
+    display: flex;
+    flex-wrap: wrap;
+    flex-direction: row;
+    margin: 0 0 -1.5rem -1.5rem;
+}
+
+.justify-center {
+    justify-content: center;
+}
+
+.card-column {
+    flex: 1 0 100%;
+    padding: 1.5rem;
+    margin-bottom: 1.5rem;
+}
+
+.code-card {
+    display: flex;
+    justify-content: column;
+    flex-direction: column;
+    min-height: 100%;
+    color: var(--teal);
+    padding: .5rem;
+    border: .25rem dashed var(--glow);
+}
+
+.card-header {
+    padding: .5rem;
+    border: .25rem solid var(--glow);
+}
+
+@media screen and (min-width: 768px) {
+    .card-column {
+        flex: 0 0 50%;
+        max-width:50%
+    }
+}
+
+@media screen and (min-width: 992px) {
+    header {
+      width: 75%;
+    }
+  
+    .card-column {
+      flex: 0 0 33.333%;
+      max-width: 33.333%;
+    }
+  }
